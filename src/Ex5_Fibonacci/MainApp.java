@@ -17,7 +17,6 @@ public class MainApp
         }
 
 
-
     }
 
     static boolean esteFibonacci(int x)
