@@ -1,4 +1,0 @@
-Suma: 27
-Min: 2
-Max: 8
-Media: 4.5
