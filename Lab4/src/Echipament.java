@@ -1,4 +1,6 @@
-public class Echipament
+import java.io.Serializable;
+
+public class Echipament implements Serializable
 {
     private String denumire;
     private int nr_inv;
@@ -7,7 +9,9 @@ public class Echipament
     private Stare stare;
 
 
-    public Echipament(String denumire, int nr_inv, ZonaMag zona, Stare stare, int pret) {
+    public Echipament(String denumire, int nr_inv, ZonaMag zona, Stare stare, int pret)
+    {
+        super();
         this.denumire = denumire;
         this.nr_inv = nr_inv;
         this.zona = zona;
@@ -53,5 +57,15 @@ public class Echipament
 
     public void setZona(ZonaMag zona) {
         this.zona = zona;
+    }
+
+    @Override
+    public String toString() {
+        return "Echipament{" +
+                "denumire='" + denumire + '\'' +
+                ", nr_inv=" + nr_inv +
+                ", pret=" + pret +
+                ", zona=" + zona +
+                ", stare=" + stare +"\n";
     }
 }

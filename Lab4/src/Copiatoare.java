@@ -25,4 +25,10 @@ public class Copiatoare extends Echipament
     public void setFormat(FormatCopiere format) {
         this.format = format;
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+"Copiatoare{" + "p_ton=" + p_ton + ", format=" + format + '}';
+
+    }
 }

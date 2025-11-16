@@ -1,6 +1,6 @@
 public enum Stare {
-    ACHIZITIONAT,
-    EXPUS,
-    VANDUT;
+    achizitionat,
+    expus,
+    vandut;
 
 }

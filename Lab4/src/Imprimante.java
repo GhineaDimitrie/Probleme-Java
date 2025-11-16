@@ -6,11 +6,11 @@ public class Imprimante extends Echipament
     private ModTiparire tiparire;
 
 
-    public Imprimante(String denumire,int nr_inv,int pret,ZonaMag zonaMag,Stare stare,int ppm, int rezolutie, int p_car, ModTiparire tiparire)
+    public Imprimante(String denumire, int nr_inv, int pret, ZonaMag zonaMag, Stare stare, int ppm, String rezolutie, int nr_pag, ModTiparire tiparire)
     {
         super(denumire,nr_inv,zonaMag,stare,pret);
         this.ppm = ppm;
-        this.rezolutie = rezolutie;
+
         this.p_car = p_car;
         this.tiparire = tiparire;
     }
@@ -45,5 +45,15 @@ public class Imprimante extends Echipament
 
     public void setTiparire(ModTiparire tiparire) {
         this.tiparire = tiparire;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+"Imprimante{"+
+                "ppm=" + ppm +
+                ", rezolutie=" + rezolutie +
+                ", p_car=" + p_car +
+                ", tiparire=" + tiparire +
+                '}';
     }
 }

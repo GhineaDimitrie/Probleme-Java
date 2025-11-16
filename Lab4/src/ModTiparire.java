@@ -1,5 +1,6 @@
-public enum ModTiparire{
-    ALB,
-    NEGRU;
+public enum ModTiparire
+{
+    color,
+    albNegru;
 }
 

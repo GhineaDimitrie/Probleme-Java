@@ -1,5 +1,5 @@
 public enum SistemOperare{
 
-    WINDOWS,
-    LINUX;
+    windows,
+    linux;
 }
